@@ -2,7 +2,7 @@ from app.people.customer import Customer
 
 
 class CinemaBar:
-    def __init__(self):
+    def __init__(self) -> None:
         pass
 
     @staticmethod
