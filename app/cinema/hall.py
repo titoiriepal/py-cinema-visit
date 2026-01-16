@@ -1,7 +1,8 @@
-from app.people.customer import Customer, Cleaner
+from app.people.customer import Customer
+from app.people.cinema_staff import Cleaner
 
 
-class cinemaHall:
+class CinemaHall:
     def __init__(self, number: int) -> None:
         self.number = number
 

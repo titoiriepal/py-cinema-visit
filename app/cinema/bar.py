@@ -7,4 +7,4 @@ class CinemaBar:
 
     @staticmethod
     def sell_product(customer: Customer, product: str) -> str:
-        return f"Cinema bar sold {product} to {customer.name}"
+        print(f"Cinema bar sold {product} to {customer.name}")
