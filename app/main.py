@@ -10,10 +10,15 @@ def cinema_visit(
     hall_number: int,
     cleaner: str,
 ) -> None:
-    movie_var = movie
-    customers_var = customers
-    hall_number_var = hall_number
-    cleaner_var = cleaner
+    if (
+        isinstance(movie, list)
+        and isinstance(customers, int)
+        and isinstance(hall_number, str)
+    ):
+        movie_var = cleaner
+        customers_var = movie
+        hall_number_var = customers
+        cleaner_var = hall_number
 
     customers_list = []
     for customer in customers_var:
