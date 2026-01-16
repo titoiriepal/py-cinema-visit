@@ -1,0 +1,15 @@
+from app.people.customer import Customer, Cleaner
+
+
+class cinemaHall:
+    def __init__(self, number: int) -> None:
+        self.number = number
+
+    def movie_session(
+        self, movie_name: str, customers: list[Customer], clean_staff: Cleaner
+    ) -> None:
+        print(f'"{movie_name}" started in hall number {self.number}.')
+        for customer in customers:
+            print(customer.watch_movie(movie_name))
+        print(f'"{movie_name}" ended.')
+        clean_staff.clean_hall(self.number)
